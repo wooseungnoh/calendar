@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  user-select: none;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  width: 400px;
+  height: 300px;
+}
+.tools {
+  display: flex;
+  justify-content: center;
+}
+.thisMonth {
+  font-size: 20px;
+  font-weight: bold;
+}
+.dayTable {
+  display: flex;
+  width: 100%;
+}
+.dayTable div {
+  width: 100%;
+  text-align: center;
+  background: #eee;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.calendar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #eee;
+}
+.week {
+  height: 100px;
+  display: flex;
+}
+.day {
+  padding: 3px;
+  margin: 1px;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 100px;
+  background: #fff;
+}
+.day.today {
+  background: #d392ff;
+}
+.day.highLight {
+  background: red;
+}
+.prevDate {
+  padding: 3px;
+  margin: 1px;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 100px;
+  background: #ffc7c7;
+}
+.nextDate {
+  padding: 3px;
+  margin: 1px;
+  font-size: 12px;
+  border-radius: 10px;
+  width: 100px;
+  background: #bbdbff;
+}
